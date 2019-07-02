@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+    color: #eee;
+    font-family: sans-serif;
+}
+
+.title {
+    color: cornflowerblue;
+    margin: 1rem;
+    text-align: center;
+}
+
+#search {
+    display: block;
+    width: 90%;
+    max-width: 40rem;
+    margin: 2em auto;
+    padding: .5em 1em;
+    font-size: 1rem;
+}
+
+#results {
+    width: 90%;
+    max-width: 40rem;
+    margin: 3em auto;
+}
+
+.country {
+    display: flex;
+    margin-bottom: 1em;
+    padding: 1em;
+    background: #555;
+    border: 1px solid #555;
+    transition: border .4s;
+
+}
+    .country:hover {
+        border: 1px solid cornflowerblue;
+        box-shadow: 0 0 10px cornflowerblue;
+    }
+
+.flag {
+    width: 9rem;
+    height: auto;
+}
+
+.country-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+    .country-info h2 {
+        font-size: 1.75rem;
+    }
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5em;
+    padding-top: .5em;
+    border-top: 1px solid #ccc;
+}
+    .details div {
+        text-align: center;
+    }
+    .details h4 {
+        font-size: 1.25rem;
+        margin-top: .25em;
+    }
+    .details span {
+        font-style: italic;
+        color: #ccc;
+    }
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    html {
+        font-size: 10px;
+    }
+    .flag {
+        width: 7rem;
+    }
+    .country h2 {
+        font-size: 1.25rem;
+    }
+    .details h4 {
+        font-size: 1rem;
+    }
+}
